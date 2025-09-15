@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-paloma",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "npm install --legacy-peer-deps",
+    "start": "npm run setup && npm run dev",
+    "dev": "vite --port 5173 --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rimraf node_modules package-lock.json"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "react": "18.2.0",
+    "react-day-picker": "8.10.1",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "rimraf": "^5.0.5",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.0"
+  }
+}

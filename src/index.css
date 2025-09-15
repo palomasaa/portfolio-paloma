@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base global (escopo seguro e BLOCO FECHADO) */
+@layer base {
+  :root { color-scheme: dark; }
+  html, body, #root { height: 100%; }
+}
+
+/* Utilitário da máscara radial para o grid tech */
+.bg-tech-mask {
+  -webkit-mask-image: radial-gradient(80% 60% at 50% 40%, black 60%, transparent 100%);
+  mask-image: radial-gradient(80% 60% at 50% 40%, black 60%, transparent 100%);
+}
